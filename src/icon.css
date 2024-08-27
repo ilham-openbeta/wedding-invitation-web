@@ -1,0 +1,93 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?s56om4');
+  src:  url('fonts/icomoon.eot?s56om4#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?s56om4') format('truetype'),
+    url('fonts/icomoon.woff?s56om4') format('woff'),
+    url('fonts/icomoon.svg?s56om4#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-send:before {
+  content: "\e915";
+}
+.icon-sound-off:before {
+  content: "\e913";
+}
+.icon-sound-on:before {
+  content: "\e914";
+}
+.icon-close:before {
+  content: "\e912";
+}
+.icon-status-failed:before {
+  content: "\e910";
+}
+.icon-status-success:before {
+  content: "\e911";
+}
+.icon-file-copy:before {
+  content: "\e90f";
+}
+.icon-arrow-down:before {
+  content: "\e90e";
+}
+.icon-annotation-heart:before {
+  content: "\e900";
+}
+.icon-book-heart-love:before {
+  content: "\e901";
+}
+.icon-calendar:before {
+  content: "\e902";
+}
+.icon-calendar-heart:before {
+  content: "\e903";
+}
+.icon-clock:before {
+  content: "\e904";
+}
+.icon-heart-outline:before {
+  content: "\e905";
+}
+.icon-heart-solid:before {
+  content: "\e906";
+}
+.icon-home-heart:before {
+  content: "\e907";
+}
+.icon-instagram:before {
+  content: "\e908";
+}
+.icon-love-letter-and-gift-box-with-ribbon:before {
+  content: "\e909";
+}
+.icon-love-letter-heart:before {
+  content: "\e90a";
+}
+.icon-love-letter-mail:before {
+  content: "\e90b";
+}
+.icon-loving-hearts:before {
+  content: "\e90c";
+}
+.icon-map:before {
+  content: "\e90d";
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- HTML Meta Tags -->
+    <meta name="description" content="Undangan Pernikahan Ilham & Yulvi Tanggal 15 September 2024 di Seluma, Bengkulu">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://yulvi.ilham.web.id">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Undangan Pernikahan Ilham & Yulvi">
+    <meta property="og:description"
+        content="Undangan Pernikahan Ilham & Yulvi Tanggal 15 September 2024 di Seluma, Bengkulu">
+    <meta property="og:image" content="https://i.ibb.co.com/7zGLb7C/banner.jpg">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="yulvi.ilham.web.id">
+    <meta property="twitter:url" content="https://yulvi.ilham.web.id">
+    <meta name="twitter:title" content="Undangan Pernikahan Ilham & Yulvi">
+    <meta name="twitter:description"
+        content="Undangan Pernikahan Ilham & Yulvi Tanggal 15 September 2024 di Seluma, Bengkulu">
+    <meta name="twitter:image" content="https://i.ibb.co.com/7zGLb7C/banner.jpg">
+
+    <title>Undangan Pernikahan Ilham & Yulvi</title>
+
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+    <link rel="icon" type="image/png" href="https://ilham-openbeta.sirv.com/web/favicon.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/rrweb-player@latest/dist/style.css" rel="stylesheet">
+
+</head>
+
+<body style="display: flex; justify-content: center;">
+    <script src="https://cdn.jsdelivr.net/npm/rrweb-player@latest/dist/index.js"></script>
+
+    <script>
+        var urlParams = new URLSearchParams(window.location.search);
+        var recordId = urlParams.get('id');
+        function getReplay() {
+            fetch("https://guest-book-api-taupe.vercel.app/record?id="+recordId)
+                .then((response) => response.json())
+                .then((result) => {
+                    const replayer = new rrwebPlayer({
+                        target: document.body,
+                        props: {
+                            events: result.events
+                        },
+                    });
+                    replayer.play();
+
+                })
+                .catch((error) => {
+                    console.error(error)
+                });
+        }
+        getReplay()
+    </script>
+
+</body>
+
+</html>
