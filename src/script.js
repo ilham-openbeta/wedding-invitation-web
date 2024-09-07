@@ -187,7 +187,7 @@ function generateComment(name, timestamp, message) {
         </div>
     </div>
     `;
-  commentContainer.insertAdjacentHTML("beforeend", comment);
+  commentContainer.insertAdjacentHTML("afterbegin", comment);
 }
 
 // ucapan
@@ -207,7 +207,7 @@ function getMsg() {
         console.error(error);
         hideLoading(loaderId);
         commentContainer.insertAdjacentHTML(
-          "beforeend",
+          "afterbegin",
           "Gagal mengambil pesan"
         );
       });
@@ -248,6 +248,7 @@ document.querySelector("#form-ucapan").addEventListener("submit", (e) => {
   fetch("https://guest-book-api-taupe.vercel.app/message", requestOptions)
     .then((response) => response.text())
     .then((result) => {
+      e.target.reset()
       hideLoading(loaderId);
       openModal("modalUcapanSukses");
       generateComment(
